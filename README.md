@@ -1,7 +1,5 @@
 # Geoeléctrico 2.1
 
-Portal geográfico de centrales e infraestructura eléctrica.
+Sitio estático MapLibre con mapas base configurables, WMS/WFS de referencia y capas `VECTOR_LOCAL` generadas antes de publicar desde fuentes SHP/CSV oficiales.
 
-GitHub Pages: https://fgpino.github.io/Geoelectrico_2/
-
-Raíz web publicada: D:\Desarrollos\Geo_capas_geograficas\Centrales_Electricas\Python\Portal_Centrales\GEOELECTRICO_2_1_PROTOTIPO\sitio_2_1_template
+El navegador consume únicamente archivos estáticos de `data/`. La adquisición y normalización se ejecutan localmente fuera de GitHub Pages.

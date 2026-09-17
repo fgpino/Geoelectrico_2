@@ -41,6 +41,15 @@ async function loadJson(path, fallback=null) {
   try {
     const r = await fetch(path,{cache:'no-store'});
     if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    if (String(path).toLowerCase().endsWith('.geojsonz')) {
+      if (typeof DecompressionStream === 'undefined') {
+        throw new Error('El navegador no soporta descompresión GZIP mediante DecompressionStream');
+      }
+      const ds = new DecompressionStream('gzip');
+      const decompressed = r.body.pipeThrough(ds);
+      const txt = await new Response(decompressed).text();
+      return JSON.parse(txt);
+    }
     return await r.json();
   } catch (e) {
     if (fallback !== null) return fallback;

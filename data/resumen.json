@@ -1,0 +1,129 @@
+{
+  "generated_at": "2026-08-26T12:32:23",
+  "dataset": {
+    "archivo_aprobado": "CAMMESA_vs_OSM_OpenInfraMap_APROBADO.xlsx",
+    "registros_central_agente": 487,
+    "codigos_central_unicos": 446,
+    "registros_intercambio_excluidos": 9,
+    "codigos_intercambio_excluidos": 3,
+    "codigos_objetivo_cartografico": 443
+  },
+  "cobertura": {
+    "registros_cartografiados": 478,
+    "registros_sin_indicio_geografico": 0,
+    "codigos_central_con_alguna_coordenada": 443,
+    "codigos_central_sin_indicio_geografico": 0,
+    "porcentaje_cobertura_codigos": 100.0,
+    "registros_publicados": 478,
+    "registros_no_publicados": 0,
+    "codigos_central_con_ubicacion_publicable": 443,
+    "codigos_central_sin_ubicacion_publicable": 0
+  },
+  "coordenadas_provisorias_revision": {
+    "registros": 301,
+    "codigos_central": 285
+  },
+  "fuentes_coordenada_publicada": {
+    "GEOREF": {
+      "registros": 228,
+      "codigos_central": 220
+    },
+    "OSM_OPENINFRAMAP": {
+      "registros": 60,
+      "codigos_central": 56
+    },
+    "OTRA_FUENTE": {
+      "registros": 9,
+      "codigos_central": 9
+    },
+    "SECRETARIA_ENERGIA": {
+      "registros": 181,
+      "codigos_central": 162
+    }
+  },
+  "tipos_publicados": {
+    "Biogás": 37,
+    "Biomasa": 20,
+    "Eólica": 73,
+    "Hidráulica": 68,
+    "Nuclear": 3,
+    "Solar": 95,
+    "Térmica": 182
+  },
+  "calidad_publicada": {
+    "ALTA": {
+      "registros": 84,
+      "codigos_central": 76
+    },
+    "CONFIRMADA": {
+      "registros": 76,
+      "codigos_central": 66
+    },
+    "CONFLICTO": {
+      "registros": 1,
+      "codigos_central": 1
+    },
+    "MEDIA": {
+      "registros": 17,
+      "codigos_central": 16
+    },
+    "PROVISORIA": {
+      "registros": 240,
+      "codigos_central": 232
+    },
+    "REVISAR": {
+      "registros": 60,
+      "codigos_central": 56
+    }
+  },
+  "motivos_sin_ubicacion": {},
+  "metodos_coordenada_publicada": {
+    "Estimación propia: centroide aproximado de PROVINCIA_CENTRAL": 228,
+    "Cruce CENTRAL PO ↔ prefijo del código de máquina CAMMESA": 79,
+    "Cruce CENTRAL PO ↔ prefijo del código de máquina CAMMESA; coordenada original confirmada mediante OSM": 71,
+    "Coincidencia nominal con central de la capa oficial (score 100/100)": 16,
+    "OpenStreetMap power=plant por matching nominal a revisar (MATCH_NOMBRE; score 100.0)": 13,
+    "Estimación usando un punto homónimo de la capa oficial en la misma provincia": 11,
+    "Coincidencia del código CENTRAL del PO con la capa geográfica 2025": 6,
+    "OpenStreetMap power=plant por matching nominal a revisar (MATCH_NOMBRE; score 92.0)": 3,
+    "OpenStreetMap power=plant por matching nominal a revisar (MATCH_NOMBRE; score 91.1)": 3,
+    "Coincidencia del código CENTRAL del PO con la capa geográfica 2025; coordenada original confirmada mediante OSM": 3,
+    "OpenStreetMap power=plant por matching nominal a revisar (MATCH_NOMBRE; score 96.6)": 3,
+    "OpenStreetMap power=plant por matching nominal a revisar (MATCH_NOMBRE; score 91.0)": 2,
+    "OpenStreetMap power=plant por matching nominal a revisar (MATCH_NOMBRE; score 90.8)": 2,
+    "OpenStreetMap power=plant por matching nominal a revisar (MATCH_NOMBRE; score 93.3)": 2,
+    "OpenStreetMap power=plant por matching nominal a revisar (MATCH_NOMBRE; score 92.9)": 2,
+    "OpenStreetMap power=plant por matching nominal a revisar (MATCH_NOMBRE; score 92.4)": 2,
+    "OpenStreetMap power=plant por matching nominal a revisar (MATCH_NOMBRE; score 92.8)": 2,
+    "OpenStreetMap power=plant por matching nominal a revisar (MATCH_NOMBRE; score 90.3)": 2,
+    "OpenStreetMap power=plant por matching nominal a revisar (MATCH_NOMBRE; score 93.0)": 2,
+    "OpenStreetMap power=plant por matching nominal a revisar (MATCH_NOMBRE; score 99.2)": 2,
+    "OpenStreetMap power=plant por matching nominal a revisar (MATCH_NOMBRE; score 91.7)": 1,
+    "OpenStreetMap power=plant por matching nominal a revisar (MATCH_NOMBRE; score 94.7)": 1,
+    "OpenStreetMap power=plant por matching nominal a revisar (MATCH_NOMBRE; score 91.9)": 1,
+    "OpenStreetMap power=plant por matching nominal a revisar (MATCH_NOMBRE; score 95.4)": 1,
+    "OpenStreetMap power=plant por matching nominal a revisar (MATCH_NOMBRE; score 90.4)": 1,
+    "OpenStreetMap power=plant por matching nominal a revisar (MATCH_NOMBRE; score 98.7)": 1,
+    "OpenStreetMap power=plant por matching nominal a revisar (MATCH_NOMBRE; score 93.7)": 1,
+    "OpenStreetMap power=plant por matching nominal a revisar (MATCH_NOMBRE; score 92.7)": 1,
+    "Cruce CENTRAL PO ↔ prefijo del código de máquina CAMMESA; existe conflicto con la referencia OSM": 1,
+    "OpenStreetMap power=plant por matching nominal a revisar (MATCH_NOMBRE; score 99.0)": 1,
+    "Estimación por similitud de nombre, provincia y tecnología (score 86/100)": 1,
+    "OpenStreetMap power=plant por matching nominal a revisar (MATCH_NOMBRE; score 92.2)": 1,
+    "OpenStreetMap power=plant por matching nominal a revisar (MATCH_NOMBRE; score 91.4)": 1,
+    "Cruce por establecimiento/agente PAPEL MISIONERO con CSV Secretaría de Energía; se reemplaza centroide provincial.": 1,
+    "OpenStreetMap power=plant por matching nominal a revisar (MATCH_NOMBRE; score 93.1)": 1,
+    "OpenStreetMap power=plant por matching nominal a revisar (MATCH_NOMBRE; score 97.3)": 1,
+    "OpenStreetMap power=plant por matching nominal a revisar (MATCH_NOMBRE; score 96.0)": 1,
+    "Cruce por nombre de central/sitio (RIO CHICO) con CSV Secretaría de Energía; se reemplaza centroide provincial.": 1,
+    "OpenStreetMap power=plant por matching nominal a revisar (MATCH_NOMBRE; score 91.8)": 1,
+    "OpenStreetMap power=plant por matching nominal a revisar (MATCH_NOMBRE; score 93.5)": 1,
+    "OpenStreetMap power=plant por matching nominal a revisar (MATCH_NOMBRE; score 92.3)": 1,
+    "OpenStreetMap power=plant por matching nominal a revisar (MATCH_NOMBRE; score 96.5)": 1,
+    "OpenStreetMap power=plant por matching nominal a revisar (MATCH_NOMBRE; score 90.2)": 1,
+    "OpenStreetMap power=plant por matching nominal a revisar (MATCH_NOMBRE; score 90.9)": 1
+  },
+  "potencia_maxima_osm_mw": 2234.6,
+  "nota_clave": "El mapa incluye toda central del universo cartográfico que posea alguna coordenada o indicio geográfico válido, aunque sea provisorio. Las referencias provisorias se identifican expresamente y se documenta el criterio usado —por ejemplo un centroide territorial, una localidad o un complejo homónimo—. La sección 'Centrales sin ubicación' queda reservada exclusivamente a registros para los que no se encontró ningún indicio geográfico utilizable.",
+  "advertencia_provisorias": "Una coordenada provisoria es una referencia para facilitar la localización aproximada y no debe interpretarse como el emplazamiento exacto de la central, casa de máquinas o instalación generadora."
+}

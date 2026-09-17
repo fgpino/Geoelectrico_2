@@ -1,0 +1,60 @@
+{
+  "fuentes": [
+    {
+      "id": "ARGENMAP_IGN",
+      "nombre": "Argenmap — Instituto Geográfico Nacional",
+      "rol": "Mapa base cartográfico oficial",
+      "descripcion": "Mapa base oficial utilizado como cartografía de fondo del portal, consumido mediante el servicio TMS publicado por el Instituto Geográfico Nacional.",
+      "url": "https://www.ign.gob.ar/AreaServicios/Argenmap/introduccion"
+    },
+    {
+      "id": "CAMMESA",
+      "nombre": "CAMMESA — Parte Post Operativo",
+      "rol": "Fuente primaria de identificación",
+      "descripcion": "Identificación de códigos CENTRAL, agentes y tecnologías presentes en el Parte Post Operativo.",
+      "url": "https://cammesaweb.cammesa.com/parte-post-operativo/"
+    },
+    {
+      "id": "OSM_OPENINFRAMAP",
+      "nombre": "OpenStreetMap / OpenInfraMap",
+      "rol": "Fuente geográfica complementaria",
+      "descripcion": "Objetos power=plant de OpenStreetMap, contrastados mediante OpenInfraMap y referencias CAMMESA cuando existen.",
+      "url": "https://openinframap.org/stats/area/Argentina/plants"
+    },
+    {
+      "id": "SECRETARIA_ENERGIA",
+      "nombre": "Secretaría de Energía",
+      "rol": "Fuente oficial complementaria",
+      "descripcion": "Información geográfica de centrales publicada en datos abiertos de energía e incorporada al proceso de conciliación.",
+      "url": "https://datos.gob.ar/dataset/energia-generacion-electrica---centrales-generacion"
+    },
+    {
+      "id": "INVENTARIO_PRESAS",
+      "nombre": "Inventario de Presas y Centrales Hidroeléctricas",
+      "rol": "Fuente técnica histórica",
+      "descripcion": "Fichas técnicas del Inventario de Presas y Centrales Hidroeléctricas de la República Argentina.",
+      "url": ""
+    },
+    {
+      "id": "GEOREF",
+      "nombre": "Georef / referencias territoriales oficiales",
+      "rol": "Referencia territorial / fuente de aproximaciones",
+      "descripcion": "Referencias territoriales oficiales que pueden utilizarse para construir coordenadas provisorias —por ejemplo centroides provinciales o de localidades— cuando no se dispone del emplazamiento exacto.",
+      "url": "https://www.argentina.gob.ar/georef"
+    },
+    {
+      "id": "OTRA_FUENTE",
+      "nombre": "Otras fuentes públicas",
+      "rol": "Fuente complementaria",
+      "descripcion": "Fuentes públicas adicionales documentadas en el dataset maestro.",
+      "url": ""
+    },
+    {
+      "id": "ESTIMACION",
+      "nombre": "Estimación / referencia provisoria",
+      "rol": "Indicio geográfico publicado con advertencia",
+      "descripcion": "Punto aproximado derivado de un criterio documentado —por ejemplo centroide provincial, localidad o complejo homónimo—. Se publica para no omitir la central, identificándolo expresamente como provisorio.",
+      "url": ""
+    }
+  ]
+}

@@ -2,12 +2,9 @@
   "version": "2.1",
   "site_title": "Geoeléctrico 2.1",
   "site_subtitle": "Centrales eléctricas e infraestructura energética de la República Argentina",
-  "map_center": [
-    -64.0,
-    -38.0
-  ],
+  "map_center": [-64.0, -38.0],
   "map_zoom": 3.2,
-  "initial_basemap": "argenmap",
+  "initial_basemap": "argenmap_gris",
   "central_layer_opacity": 0.95,
   "esri_token": ""
 }
