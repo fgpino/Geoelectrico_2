@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Geoeléctrico 2.1 - visor geográfico energético">
+  <title>Geoeléctrico 2.1</title>
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@6.1.0/dist/maplibre-gl.css">
+  <link rel="stylesheet" href="./css/style.css?v=2.1.7-tensiones-eett">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1 id="site-title">Geoeléctrico 2.1</h1>
+      <div id="site-subtitle" class="subtitle">Visor energético</div>
+    </div>
+    <div class="stats">
+      <div><span id="stat-centrals">0</span><small>Centrales</small></div>
+      <div><span id="stat-features">0</span><small>Registros</small></div>
+      <div><span id="stat-power">0 MW</span><small>Potencia cargada</small></div>
+    </div>
+    <button id="settings-open" class="settings-btn" title="Configuración del visor">⚙ Configuración</button>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <section class="panel-section">
+        <button class="section-toggle"><span>VISUALIZACIÓN</span><b>⌄</b></button>
+        <div class="section-body">
+          <label class="field-label">Representar centrales por</label>
+          <select disabled><option>Potencia instalada</option></select>
+          <p class="help">Geoeléctrico 2.1 conserva la simbología de potencia del visor 1.0. Los modos PO se incorporarán en versiones posteriores.</p>
+        </div>
+      </section>
+
+      <section class="panel-section">
+        <button class="section-toggle"><span>FILTROS</span><b>⌄</b></button>
+        <div class="section-body">
+          <label class="field-label" for="search">Central / agente</label>
+          <input id="search" type="search" placeholder="Buscar...">
+          <label class="field-label" for="province">Provincia</label>
+          <select id="province"></select>
+          <label class="field-label">Tecnología</label>
+          <div id="type-filters" class="check-grid"></div>
+          <label class="field-label">Calidad de ubicación</label>
+          <div id="quality-filters" class="check-grid"></div>
+          <label class="field-label">Potencia mínima</label>
+          <div class="range-line"><input id="capacity" type="range" min="0" max="3000" step="25" value="0"><span id="capacity-value">0 MW</span></div>
+          <div class="filter-footer"><span><b id="filtered-count">0</b> visibles</span><button id="btn-reset" class="secondary">Restablecer</button></div>
+        </div>
+      </section>
+
+      <section class="panel-section">
+        <button class="section-toggle"><span>CAPAS</span><b>⌄</b></button>
+        <div class="section-body">
+          <div id="external-layers"><span class="muted">Cargando catálogo de capas…</span></div>
+        </div>
+      </section>
+
+      <section class="panel-section">
+        <button class="section-toggle"><span>LEYENDA</span><b>⌄</b></button>
+        <div id="legend" class="section-body legend"></div>
+      </section>
+
+      <section class="panel-section collapsed">
+        <button class="section-toggle"><span>ESTADO DE SERVICIOS</span><b>⌄</b></button>
+        <div id="service-status" class="section-body status-box"><div class="muted">Sin eventos.</div></div>
+      </section>
+
+      <section class="panel-section collapsed">
+        <button class="section-toggle"><span>FICHA / ATRIBUTOS</span><b>⌄</b></button>
+        <div id="detail-content" class="section-body"><div class="muted">Seleccione una central.</div></div>
+      </section>
+    </aside>
+
+    <div id="map" class="map"></div>
+  </main>
+
+  <aside id="settings-drawer" class="settings-drawer">
+    <div class="drawer-head"><h2>Configuración</h2><button id="settings-close">×</button></div>
+    <div class="drawer-body">
+      <label class="field-label" for="basemap-select">Mapa base</label>
+      <select id="basemap-select"></select>
+      <label class="field-label">Intensidad del mapa base</label>
+      <div class="range-line"><input id="basemap-opacity" type="range" min="0" max="100" value="100"><span id="basemap-opacity-value">100 %</span></div>
+      <p class="help">La intensidad se guarda en el navegador. Las capas temáticas tienen su propio control de opacidad.</p>
+      <hr>
+      <button id="reset-preferences" class="secondary wide">Restablecer preferencias visuales</button>
+      <div class="version-card">
+        <b>Geoeléctrico 2.1</b>
+        <span>Arquitectura cartográfica extensible: mapas base, WMS/WFS, VECTOR_LOCAL, menú jerárquico y control de opacidad.</span>
+      </div>
+    </div>
+  </aside>
+
+  <script type="module" src="./js/app.js?v=2.1.11-argenmap50-etiquetas80"></script>
+</body>
+</html>
